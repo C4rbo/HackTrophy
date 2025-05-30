@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">HackTrophy</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Ciao questo è del testo che ho cambiato e che starebbe al posto lorem ipsum
+    </string>
+</resources>
