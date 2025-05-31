@@ -2,9 +2,28 @@
     <string name="app_name">HackTrophy</string>
     <string name="action_settings">Settings</string>
 
-    <string name="title">Benvenuto</string>
-    <string name="section">Sezioni</string>
+    <!-- setting base -->
+    <string name="description_photo">Photo</string>
 
+    <!-- Activity main -->
+
+    <string name="app_name_sub">App for cybersecurity enthusiast</string>
+    <string name="section">Section</string>
+    <string name="next">Continue</string>
+
+    <!-- Activity main - section -->
+    <string name="card1">CTFTime</string>
+    <string name="card2">Documentation</string>
+    <string name="card3">Writeup</string>
+    <string name="card4">Owner</string>
+
+    <!-- Fragment Documentation - section -->
+    <string name="documentation_title">Documentation</string>
+    <string name="doc_card1">Card 1</string>
+    <string name="doc_card1_desc">This is a description</string>
+    <string name="doc_card2">Card 2</string>
+    <string name="doc_card3">Card 3</string>
+    <string name="doc_card4">Card 4</string>
 
     <string name="previous">Previous</string>
 
