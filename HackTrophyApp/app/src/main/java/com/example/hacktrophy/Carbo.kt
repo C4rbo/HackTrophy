@@ -6,11 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.hacktrophy.databinding.FragmentFirstBinding
+import com.example.hacktrophy.databinding.CarboBinding
 
-class FirstFragment : Fragment() {
+class Carbo : Fragment() {
 
-    private var _binding: FragmentFirstBinding? = null
+    private var _binding: CarboBinding? = null
 
     private val binding get() = _binding!!
 
@@ -19,17 +19,13 @@ class FirstFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-        _binding = FragmentFirstBinding.inflate(inflater, container, false)
+        _binding = CarboBinding.inflate(inflater, container, false)
         return binding.root
 
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        binding.card1.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
-        }
 
     }
 

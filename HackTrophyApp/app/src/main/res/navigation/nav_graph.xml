@@ -3,31 +3,41 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/IntroFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.example.hacktrophy.FirstFragment"
+        android:id="@+id/IntroFragment"
+        android:name="com.example.hacktrophy.IntroFragment"
         android:label="@string/app_name"
-        tools:layout="@layout/fragment_first">
+        tools:layout="@layout/intro_fragment">
 
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            android:id="@+id/action_Intro_to_Main"
+            app:destination="@id/HomepageFragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.example.hacktrophy.SecondFragment"
+        android:id="@+id/HomepageFragment"
+        android:name="com.example.hacktrophy.HomepageFragment"
         android:label="@string/app_name"
-        tools:layout="@layout/fragment_second">
+        tools:layout="@layout/homepage_fragment">
 
         <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
-        <action
-            android:id="@+id/action_SecondFragment_to_Documentation"
+            android:id="@+id/action_Main_to_Documentation"
             app:destination="@id/Documentation" />
+        <action
+            android:id="@+id/action_Main_to_Api"
+            app:destination="@id/Ctftime" />
+        <action
+            android:id="@+id/action_Main_to_Carbo"
+            app:destination="@id/Carbo" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Ctftime"
+        android:name="com.example.hacktrophy.Ctftime"
+        android:label="@string/app_name"
+        tools:layout="@layout/ctftime">
     </fragment>
 
     <fragment
@@ -35,6 +45,12 @@
         android:name="com.example.hacktrophy.Documentation"
         android:label="@string/app_name"
         tools:layout="@layout/documentation">
+    </fragment>
 
+    <fragment
+        android:id="@+id/Carbo"
+        android:name="com.example.hacktrophy.Carbo"
+        android:label="@string/app_name"
+        tools:layout="@layout/carbo">
     </fragment>
 </navigation>

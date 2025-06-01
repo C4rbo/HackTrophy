@@ -4,30 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondFragment">
+    tools:context=".HomepageFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="16dp">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/app_name"
-            android:layout_marginTop="16dp"
-            android:gravity="center"
-            android:textSize="58sp"/>
 
         <!--android:id="@+id/textview_first" -->
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="378dp"
             android:layout_height="wrap_content"
-            android:text="@string/section"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="62dp"
             android:gravity="center"
-            android:textSize="38sp"/>
+            android:text="@string/homepage_title"
+            android:textColor="@android:color/black"
+            android:textSize="56sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="377dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/homepage_sub"
+
+            android:textColor="@android:color/black"
+            android:textSize="28sp" />
 
         <GridLayout
             android:layout_width="match_parent"
@@ -39,13 +44,12 @@
             android:columnOrderPreserved="false"
             android:useDefaultMargins="true">
 
-            <!-- CARD 1 -->
             <com.google.android.material.card.MaterialCardView
-                android:id="@+id/card_1"
+                android:id="@+id/button_api"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_columnSpan="2"
                 android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
                 android:layout_margin="8dp"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="4dp"
@@ -60,7 +64,7 @@
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="120dp"
+                        android:layout_height="200dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/logo_app"
                         android:contentDescription="@string/description_photo"
@@ -75,17 +79,14 @@
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
-
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- CARD 2 -->
             <com.google.android.material.card.MaterialCardView
-                android:id="@+id/button_aia"
+                android:id="@+id/button_documentation"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
                 android:layout_margin="8dp"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="4dp"
@@ -115,22 +116,14 @@
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:textColor="@color/dark_gray"
-                        android:textSize="14sp" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- CARD 3 -->
             <com.google.android.material.card.MaterialCardView
-                android:id="@+id/card_3"
+                android:id="@+id/button_carbo"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
                 android:layout_margin="8dp"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="4dp"
@@ -160,81 +153,11 @@
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:textColor="@color/dark_gray"
-                        android:textSize="14sp" />
-                </LinearLayout>
-            </com.google.android.material.card.MaterialCardView>
-
-            <!-- CARD 4 -->
-            <com.google.android.material.card.MaterialCardView
-                android:id="@+id/card_4"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_margin="8dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="4dp"
-                app:cardBackgroundColor="@color/white"
-                app:rippleColor="@color/light_gray">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="120dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/logo_app"
-                        android:contentDescription="@string/description_photo"
-                        android:background="?attr/selectableItemBackgroundBorderless" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="@string/card4"
-                        android:textColor="@color/black"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:textColor="@color/dark_gray"
-                        android:textSize="14sp" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
         </GridLayout>
-        <Button
-            android:id="@+id/button_second"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/previous"
-            app:layout_constraintBottom_toTopOf="@id/textview_second"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textview_second"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/lorem_ipsum"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/button_second" />
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>
 

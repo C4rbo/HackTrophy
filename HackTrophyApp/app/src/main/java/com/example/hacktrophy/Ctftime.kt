@@ -6,11 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.hacktrophy.databinding.FragmentSecondBinding
+import com.example.hacktrophy.databinding.CtftimeBinding
 
-class SecondFragment : Fragment() {
+class Ctftime : Fragment() {
 
-    private var _binding: FragmentSecondBinding? = null
+    private var _binding: CtftimeBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -21,7 +21,7 @@ class SecondFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-        _binding = FragmentSecondBinding.inflate(inflater, container, false)
+        _binding = CtftimeBinding.inflate(inflater, container, false)
         return binding.root
 
     }
@@ -29,12 +29,6 @@ class SecondFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.buttonSecond.setOnClickListener {
-            findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
-        }
-        binding.buttonAia.setOnClickListener {
-            findNavController().navigate(R.id.action_SecondFragment_to_Documentation)
-        }
     }
 
     override fun onDestroyView() {

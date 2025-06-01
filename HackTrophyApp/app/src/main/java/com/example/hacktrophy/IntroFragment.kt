@@ -6,11 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.hacktrophy.databinding.DocumentationBinding
+import com.example.hacktrophy.databinding.IntroFragmentBinding
 
-class Documentation : Fragment() {
+class IntroFragment : Fragment() {
 
-    private var _binding: DocumentationBinding? = null
+    private var _binding: IntroFragmentBinding? = null
 
     private val binding get() = _binding!!
 
@@ -19,13 +19,17 @@ class Documentation : Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-        _binding = DocumentationBinding.inflate(inflater, container, false)
+        _binding = IntroFragmentBinding.inflate(inflater, container, false)
         return binding.root
 
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        binding.card1.setOnClickListener {
+            findNavController().navigate(R.id.action_Intro_to_Main)
+        }
 
     }
 
