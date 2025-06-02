@@ -38,6 +38,7 @@
         android:name="com.example.hacktrophy.Ctftime"
         android:label="@string/app_name"
         tools:layout="@layout/ctftime">
+
     </fragment>
 
     <fragment

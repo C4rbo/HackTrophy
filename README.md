@@ -14,7 +14,7 @@
 
 - Nella sezione doc aggiungere le categorie + formattazione codice
 - Nella sezione Carbo compilare 
-- Nella sezione CTFTIME https://ctftime.org/api/
+- Nella sezione CTFTIME https://ctftime.org/api/ (implementato soltanto TopTeam e UpcomingEvents)
 
 - Traduzione strings
 

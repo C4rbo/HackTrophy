@@ -1,10 +1,7 @@
 <androidx.core.widget.NestedScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Ctftime">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,13 +9,24 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <TextView
+        <Button
+            android:id="@+id/btnTopTeamsWorld"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/ctftime_title"
-            android:layout_marginTop="16dp"
-            android:gravity="center"
-            android:textSize="48sp"/>
+            android:text="Top Team Globali" />
 
+        <Button
+            android:id="@+id/btnUpcomingEvents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eventi Futuri" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp" />
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>
