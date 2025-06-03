@@ -13,8 +13,7 @@
             android:id="@+id/btnTopTeamsWorld"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Top Team Globali" />
-
+            android:text="Top Team" />
         <Button
             android:id="@+id/btnUpcomingEvents"
             android:layout_width="match_parent"

@@ -1,4 +1,4 @@
-package com.example.hacktrophy.model
+package com.example.hacktrophy.data
 
 data class TeamInfo(
     val id: Int,

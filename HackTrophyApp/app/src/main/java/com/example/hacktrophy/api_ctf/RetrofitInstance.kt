@@ -1,4 +1,4 @@
-package com.example.hacktrophy.network
+package com.example.hacktrophy.api_ctf
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

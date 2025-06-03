@@ -9,7 +9,6 @@
     <string name="previous">Previous</string>
 
     <!-- Intro -->
-
     <string name="app_name_sub">App for cybersecurity enthusiast</string>
     <string name="section">Section</string>
     <string name="next">Continue</string>
@@ -31,10 +30,13 @@
 
     <!-- CTFTIME -->
     <string name="ctftime_title">Capture The Flag</string>
+    <!-- TOPTEAM -->
+    <string name="ctftime_topteam_title">Top Team</string>
 
+    <!-- EVENTS -->
+    <string name="ctftime_events_title">Upcoming Events</string>
+
+    <!-- CARBO -->
     <string name="carbo_title">Carbo</string>
 
-    <string name="lorem_ipsum">
-        Ciao questo è del testo che ho cambiato e che starebbe al posto lorem ipsum
-    </string>
 </resources>

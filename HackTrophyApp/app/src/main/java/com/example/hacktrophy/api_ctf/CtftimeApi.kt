@@ -1,13 +1,13 @@
-package com.example.hacktrophy.network
+package com.example.hacktrophy.api_ctf
 
-import com.example.hacktrophy.model.*
+import com.example.hacktrophy.data.*
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface CtftimeApi {
     @GET("top/")
-    fun getTopTeams(@Query("limit") limit: Int = 10): Call<Map<String, List<Team>>>
+    fun getTopTeams(): Call<Map<String, List<Team>>>
 
     @GET("events/")
     fun getEvents(
