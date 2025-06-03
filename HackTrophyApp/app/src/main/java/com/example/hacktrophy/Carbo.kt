@@ -5,8 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
 import com.example.hacktrophy.databinding.CarboBinding
+import android.content.Intent
+import android.net.Uri
 
 class Carbo : Fragment() {
 
@@ -27,6 +28,11 @@ class Carbo : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.githubCard.setOnClickListener {
+            val githubUrl = "https://github.com/C4rbo"
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(githubUrl))
+            startActivity(intent)
+        }
     }
 
     override fun onDestroyView() {

@@ -1,27 +1,43 @@
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_light">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:background="@color/background_dark"
+        android:padding="20dp">
 
         <TextView
             android:id="@+id/textViewTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/ctftime_topteam_title"
-            android:textSize="24sp"
+            android:textSize="22sp"
             android:textStyle="bold"
-            android:gravity="center"
-            android:layout_marginBottom="16dp" />
+            android:textColor="@android:color/white"
+            android:letterSpacing="0.05"/>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerTopTeams"
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"/>
+            android:text="Current season rankings"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary_light"
+            android:layout_marginTop="2dp"/>
     </LinearLayout>
-</androidx.core.widget.NestedScrollView>
+
+    <!-- Content -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerTopTeams"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingTop="12dp"
+    android:paddingBottom="60dp"/>
+
+</LinearLayout>

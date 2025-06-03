@@ -1,17 +1,89 @@
 # HackTrophy
 
-## To do
+**HackTrophy** is an Android app designed for **cybersecurity** enthusiasts and **CTF (Capture The Flag)** competitors.
+The app provides a mobile platform to track competitive events, deepen knowledge of core CTF technical categories, and manage your profile as an ethical hacker.
 
-- Mettere sfondo in drawable
+---
 
-- Sistemare GUI intro (penso basti sistemare lo sfondo)
-- Sistemare GUI Main e sezioni varie
-- Fare menu 
+## Main Features
 
-- Inserire colori e varianti in **values/colors.xml**
-- Aggiungere bottoni per muoversi nell'app (vedere **navigation/nav_graph.xml**)
+The app is divided into three core sections:
 
-- Nella sezione doc aggiungere le categorie + formattazione codice
-- Nella sezione Carbo compilare 
+### CTFtime Tracker
 
-- Traduzione strings
+* View the real-time **Top 10 Global Teams** from [CTFtime](https://ctftime.org)
+* Browse upcoming **CTF events** scheduled within the next **30 days**
+
+> Data is retrieved using the official CTFtime API and handled asynchronously with Kotlin Coroutines.
+
+### 📘 Technical Documentation
+
+An educational section organized by the most common CTF categories, ideal for learning or quick review:
+
+* **Web Security**: injection, XSS, auth bypass
+* **Binary Exploitation**: buffer overflow, ROP, format string
+* **Cryptography**: classical ciphers, RSA, padding oracle
+* **Forensics**: file analysis, memory dump, steganography
+
+Each section includes clear explanations, practical examples, and code snippets.
+
+### Personal Portfolio
+
+A space to showcase who you are as a CTF player:
+
+* Technical bio and background
+* Team affiliation (if any)
+* Useful links to GitHub, CTFtime, and other profiles
+
+---
+
+## Tech Stack
+
+| Technology         | Description                            |
+| ------------------ | -------------------------------------- |
+| **Kotlin**         | Primary programming language           |
+| **Android Studio** | Development IDE                        |
+| **Retrofit**       | REST API communication                 |
+| **Coroutines**     | Elegant and lightweight async handling |
+| **RecyclerView**   | Dynamic lists for events and teams     |
+| **Fragments**      | Modular UI architecture                |
+
+---
+
+## Retrofit Interface
+
+```kotlin
+interface CtftimeApi {
+    @GET("top/")
+    fun getTopTeams(): Call<Map<String, List<Team>>>
+
+    @GET("events/")
+    fun getEvents(
+        @Query("limit") limit: Int,
+        @Query("start") start: Long,
+        @Query("finish") finish: Long
+    ): Call<List<Event>>
+}
+```
+
+---
+
+## Roadmap
+
+* [ ] Push notifications for upcoming events
+* [ ] Global navigation menu
+* [ ] Code formatting and category refinement in "Doc" section
+* [ ] Complete content in the "ME" (portfolio) section
+* [ ] Integration of CTFtime team/player profiles directly in the app
+
+---
+
+## Screenshot
+
+*(to be added)*
+
+---
+
+## Author
+
+* **GitHub**: [@C4rbo](https://github.com/C4rbo)

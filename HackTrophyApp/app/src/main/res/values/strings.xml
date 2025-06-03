@@ -1,42 +1,37 @@
 <resources>
     <string name="app_name">HackTrophy</string>
     <string name="action_settings">Settings</string>
-
     <!-- setting base -->
     <string name="description_photo">Photo</string>
-
     <!-- Test -->
     <string name="previous">Previous</string>
-
     <!-- Intro -->
     <string name="app_name_sub">App for cybersecurity enthusiast</string>
     <string name="section">Section</string>
     <string name="next">Continue</string>
-
     <!-- Main -->
-    <string name="homepage_title">Welcome User</string>
+    <string name="homepage_title">Welcome back</string>
     <string name="homepage_sub">Choose the section</string>
     <string name="card1">CTFTime</string>
     <string name="card2">Documentation</string>
     <string name="card3">Carbo</string>
-
     <!-- Documentation -->
     <string name="documentation_title">Documentation</string>
-    <string name="doc_card1">Card 1</string>
-    <string name="doc_card1_desc">This is a description</string>
-    <string name="doc_card2">Card 2</string>
-    <string name="doc_card3">Card 3</string>
-    <string name="doc_card4">Card 4</string>
+    <string name="doc_card1">Web Security</string>
+    <string name="doc_card2">Binary exploitation</string>
+    <string name="doc_card3">Forensics</string>
+    <string name="doc_card4">Crypto</string>
+    <string name="doc_card1_desc">Available soon</string>
 
     <!-- CTFTIME -->
     <string name="ctftime_title">Capture The Flag</string>
     <!-- TOPTEAM -->
     <string name="ctftime_topteam_title">Top Team</string>
-
     <!-- EVENTS -->
-    <string name="ctftime_events_title">Upcoming Events</string>
-
+    <string name="ctftime_events_title">Events</string>
     <!-- CARBO -->
+    <string name="carbo_title_section">Me</string>
     <string name="carbo_title">Carbo</string>
-
+    <string name="carbo_description"> I\'m a computer science student from Italy and a passionate developer</string>
+    <string name="github_username">C4rbo</string>
 </resources>

@@ -1,6 +1,4 @@
 package com.example.hacktrophy
-import java.text.SimpleDateFormat
-import java.util.*
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,11 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.hacktrophy.databinding.CtftimeBinding
-import com.example.hacktrophy.api_ctf.RetrofitInstance
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
-import com.example.hacktrophy.data.Event
 
 class Ctftime : Fragment() {
 
@@ -37,7 +30,6 @@ class Ctftime : Fragment() {
         binding.btnUpcomingEvents.setOnClickListener {
             findNavController().navigate(R.id.action_Api_to_Upcomingevents)
         }
-
     }
 
     override fun onDestroyView() {
