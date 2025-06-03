@@ -16,7 +16,7 @@ The app is divided into three core sections:
 
 > Data is retrieved using the official CTFtime API and handled asynchronously with Kotlin Coroutines.
 
-### 📘 Technical Documentation
+### Technical Documentation
 
 An educational section organized by the most common CTF categories, ideal for learning or quick review:
 
