@@ -3,18 +3,18 @@
     <string name="action_settings">Settings</string>
     <!-- setting base -->
     <string name="description_photo">Photo</string>
-    <!-- Test -->
-    <string name="previous">Previous</string>
     <!-- Intro -->
     <string name="app_name_sub">App for cybersecurity enthusiast</string>
-    <string name="section">Section</string>
     <string name="next">Continue</string>
     <!-- Main -->
     <string name="homepage_title">Welcome back</string>
     <string name="homepage_sub">Choose the section</string>
     <string name="card1">CTFTime</string>
+    <string name="card1_description">It\'s an api from CTFTIME</string>
     <string name="card2">Documentation</string>
+    <string name="card2_description">Info category</string>
     <string name="card3">Carbo</string>
+    <string name="card3_description">About me</string>
     <!-- Documentation -->
     <string name="documentation_title">Documentation</string>
     <string name="doc_card1">Web Security</string>
@@ -22,16 +22,22 @@
     <string name="doc_card3">Forensics</string>
     <string name="doc_card4">Crypto</string>
     <string name="doc_card1_desc">Available soon</string>
-
     <!-- CTFTIME -->
     <string name="ctftime_title">Capture The Flag</string>
     <!-- TOPTEAM -->
     <string name="ctftime_topteam_title">Top Team</string>
+    <string name="ctftime_topteam_sub">Current season rankings</string>
     <!-- EVENTS -->
     <string name="ctftime_events_title">Events</string>
-    <!-- CARBO -->
-    <string name="carbo_title_section">Me</string>
+    <string name="ctftime_events_sub">Upcoming events</string>
+    <!-- ABOUT ME -->
+    <string name="carbo_title_section">About me</string>
     <string name="carbo_title">Carbo</string>
     <string name="carbo_description"> I\'m a computer science student from Italy and a passionate developer</string>
+    <string name="github_title">Github</string>
     <string name="github_username">C4rbo</string>
+    <string name="linkedin_title">Linkedin</string>
+    <string name="linkedin_username">Alessio Carbonara</string>
+    <string name="website_title">Portfolio</string>
+    <string name="website_url">C4rbo.vercel.app</string>
 </resources>

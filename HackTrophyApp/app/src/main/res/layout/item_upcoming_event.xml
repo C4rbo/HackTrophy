@@ -75,7 +75,7 @@
                 android:textColor="@color/text_secondary"
                 android:layout_marginStart="8dp"
                 android:drawablePadding="4dp"
-                android:drawableTint="@color/icon_tint"/>
+                app:drawableTint="@color/icon_tint"/>
         </LinearLayout>
     </LinearLayout>
 </com.google.android.material.card.MaterialCardView>

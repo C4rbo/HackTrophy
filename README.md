@@ -50,30 +50,15 @@ A space to showcase who you are as a CTF player:
 
 ---
 
-## Retrofit Interface
-
-```kotlin
-interface CtftimeApi {
-    @GET("top/")
-    fun getTopTeams(): Call<Map<String, List<Team>>>
-
-    @GET("events/")
-    fun getEvents(
-        @Query("limit") limit: Int,
-        @Query("start") start: Long,
-        @Query("finish") finish: Long
-    ): Call<List<Event>>
-}
-```
-
----
-
 ## Roadmap
 
 * [ ] Push notifications for upcoming events
 * [ ] Global navigation menu
 * [ ] Code formatting and category refinement in "Doc" section
-* [ ] Complete content in the "ME" (portfolio) section
+* [ ] Redesign the GUI
+* [ ] Design the bg
+* [ ] Theme light/dark
+* [ ] Add screenshoot
 * [ ] Integration of CTFtime team/player profiles directly in the app
 
 ---

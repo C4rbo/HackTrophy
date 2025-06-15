@@ -18,7 +18,7 @@
             android:text="@string/ctftime_title"
             android:textColor="@android:color/black"
             android:textSize="50sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"/>
 
         <GridLayout
             android:layout_width="match_parent"

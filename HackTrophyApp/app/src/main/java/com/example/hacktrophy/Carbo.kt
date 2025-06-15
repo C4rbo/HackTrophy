@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.hacktrophy.databinding.CarboBinding
 import android.content.Intent
-import android.net.Uri
+import androidx.core.net.toUri
 
 class Carbo : Fragment() {
 
@@ -24,13 +24,22 @@ class Carbo : Fragment() {
         return binding.root
 
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         binding.githubCard.setOnClickListener {
-            val githubUrl = "https://github.com/C4rbo"
-            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(githubUrl))
+            val url = "https://github.com/C4rbo"
+            val intent = Intent(Intent.ACTION_VIEW, url.toUri())
+            startActivity(intent)
+        }
+        binding.linkedinCard.setOnClickListener {
+            val url = "https://www.linkedin.com/in/alessio-carbonara/"
+            val intent = Intent(Intent.ACTION_VIEW, url.toUri())
+            startActivity(intent)
+        }
+        binding.websiteCard.setOnClickListener {
+            val url = "https://c4rbo.vercel.app/"
+            val intent = Intent(Intent.ACTION_VIEW, url.toUri())
             startActivity(intent)
         }
     }
