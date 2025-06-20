@@ -4,7 +4,11 @@
     <!-- setting base -->
     <string name="description_photo">Photo</string>
     <!-- Intro -->
-    <string name="app_name_sub">App for cybersecurity enthusiast</string>
+    <string name="app_name_sub">Hack the challenges. Sharpen your cyber skills.</string>
+    <string name="icon1">Security</string>
+    <string name="icon2">CTF</string>
+    <string name="icon3">Challenge</string>
+    <string name="version">v1.0 • Hacktrophy</string>
     <string name="next">Continue</string>
     <!-- Main -->
     <string name="homepage_title">Welcome back</string>
@@ -26,7 +30,7 @@
     <string name="ctftime_title">Capture The Flag</string>
     <!-- TOPTEAM -->
     <string name="ctftime_topteam_title">Top Team</string>
-    <string name="ctftime_topteam_sub">Current season rankings</string>
+    <string name="ctftime_topteam_sub">Current rankings</string>
     <!-- EVENTS -->
     <string name="ctftime_events_title">Events</string>
     <string name="ctftime_events_sub">Upcoming events</string>
@@ -34,6 +38,7 @@
     <string name="carbo_title_section">About me</string>
     <string name="carbo_title">Carbo</string>
     <string name="carbo_description"> I\'m a computer science student from Italy and a passionate developer</string>
+    <string name="follow_me">Follow me</string>
     <string name="github_title">Github</string>
     <string name="github_username">C4rbo</string>
     <string name="linkedin_title">Linkedin</string>

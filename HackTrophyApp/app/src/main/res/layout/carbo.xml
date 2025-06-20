@@ -1,117 +1,214 @@
-<androidx.core.widget.NestedScrollView
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
     tools:context=".Carbo">
 
-    <LinearLayout
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="24dp">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/carbo_title_section"
-            android:layout_marginTop="24dp"
-            android:gravity="center"
-            android:textSize="28sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:letterSpacing="0.03"/>
-
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="32dp"
-            app:cardCornerRadius="50dp"
-            app:cardElevation="12dp"
-            app:strokeColor="@android:color/transparent"
-            app:strokeWidth="2dp">
-            <ImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/ic_carbo"
-                android:contentDescription="@string/description_photo"
-                android:padding="4dp"/>
-        </com.google.android.material.card.MaterialCardView>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/carbo_title"
-            android:textSize="38sp"
-            android:textColor="@color/black"
-            android:gravity="center"
-            android:layout_marginTop="24dp"
-            android:textStyle="bold"
-            android:letterSpacing="0.02"
-            android:shadowColor="#10000000"
-            android:shadowDx="1"
-            android:shadowDy="1"
-            android:shadowRadius="2"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/carbo_description"
-            android:textSize="18sp"
-            android:textColor="@color/text_secondary"
-            android:gravity="center"
-            android:layout_marginTop="16dp"
-            android:lineSpacingExtra="6sp"
-            android:paddingHorizontal="32dp"/>
-
-        <!-- Social Cards Section -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="40dp"
-            android:paddingHorizontal="16dp">
+            android:padding="24dp">
+
+            <!-- Profile Header Section -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="12dp"
+                app:cardBackgroundColor="@color/surface_color">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <!-- Profile Image -->
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/profile_image"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_carbo"
+                        android:scaleType="centerCrop"
+                        app:strokeWidth="3dp"/>
+
+                    <!-- Profile Info -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/github_username"
+                        android:textSize="28sp"
+                        android:textColor="@color/primary_text"
+                        android:gravity="center"
+                        android:layout_marginTop="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Security Researcher &amp; Developer"
+                        android:textSize="16sp"
+                        android:textColor="@color/secondary_text"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"/>
+
+                    <!-- Stats Section -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="24dp"
+                        android:padding="16dp">
+
+                        <!-- Contributions -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/contributions_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1,247"
+                                android:textColor="@color/accent_color"
+                                android:textSize="24sp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Contributions"
+                                android:textColor="@color/secondary_text"
+                                android:textSize="12sp"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="40dp"
+                            android:background="@color/divider_color"/>
+
+                        <!-- Repositories -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/repositories_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="32"
+                                android:textColor="@color/accent_color"
+                                android:textSize="24sp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Repositories"
+                                android:textColor="@color/secondary_text"
+                                android:textSize="12sp"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="40dp"
+                            android:background="@color/divider_color"/>
+
+                        <!-- Followers -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/followers_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="184"
+                                android:textColor="@color/accent_color"
+                                android:textSize="24sp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Followers"
+                                android:textColor="@color/secondary_text"
+                                android:textSize="12sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Last Active Status -->
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Social Links Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/follow_me"
+                android:textColor="@color/primary_text"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="32dp"
+                android:layout_marginStart="4dp"/>
 
             <!-- GitHub Card -->
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/githubCard"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginBottom="16dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
                 app:cardCornerRadius="16dp"
-                app:cardElevation="6dp"
-                app:cardBackgroundColor="@color/github_black"
-                app:rippleColor="#30FFFFFF"
-                android:foreground="?attr/selectableItemBackground">
+                app:cardElevation="8dp"
+                app:strokeWidth="1dp"
+                app:cardBackgroundColor="@color/surface_color">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="16dp">
 
                     <ImageView
                         android:layout_width="48dp"
-                        android:contentDescription="@string/description_photo"
                         android:layout_height="48dp"
                         android:src="@drawable/ic_github"
-                        app:tint="@android:color/white"/>
+                        android:padding="8dp"
+                        android:contentDescription="@string/description_photo"/>
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
                         android:orientation="vertical"
                         android:layout_marginStart="16dp"
-                        android:gravity="center_vertical">
+                        android:layout_gravity="center_vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/github_title"
-                            android:textColor="@android:color/white"
+                            android:textColor="@color/primary_text"
                             android:textSize="18sp"
                             android:textStyle="bold"/>
 
@@ -119,11 +216,17 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/github_username"
-                            android:textColor="#BBFFFFFF"
-                            android:textSize="14sp"
-                            android:layout_marginTop="2dp"/>
+                            android:textColor="@color/secondary_text"
+                            android:textSize="14sp"/>
                     </LinearLayout>
 
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_arrow_forward"
+                        android:layout_gravity="center_vertical"
+                        app:tint="@color/accent_color"
+                        android:contentDescription="@string/description_photo"/>
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
@@ -131,38 +234,39 @@
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/linkedinCard"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginBottom="16dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
                 app:cardCornerRadius="16dp"
-                app:cardElevation="6dp"
-                app:cardBackgroundColor="@color/linkedin_blue"
-                app:rippleColor="#30FFFFFF"
-                android:foreground="?attr/selectableItemBackground">
+                app:cardElevation="8dp"
+                app:strokeWidth="1dp"
+                app:cardBackgroundColor="@color/surface_color">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="16dp">
 
                     <ImageView
-                        android:contentDescription="@string/description_photo"
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:src="@drawable/ic_linkedin" />
+                        android:src="@drawable/ic_linkedin"
+                        android:padding="8dp"
+                        android:contentDescription="@string/description_photo"/>
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
                         android:orientation="vertical"
                         android:layout_marginStart="16dp"
-                        android:gravity="center_vertical">
+                        android:layout_gravity="center_vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/linkedin_title"
-                            android:textColor="@android:color/white"
+                            android:textColor="@color/primary_text"
                             android:textSize="18sp"
                             android:textStyle="bold"/>
 
@@ -170,52 +274,57 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/linkedin_username"
-                            android:textColor="#BBFFFFFF"
-                            android:textSize="14sp"
-                            android:layout_marginTop="2dp"/>
+                            android:textColor="@color/secondary_text"
+                            android:textSize="14sp"/>
                     </LinearLayout>
 
-
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_arrow_forward"
+                        android:layout_gravity="center_vertical"
+                        app:tint="@color/accent_color"
+                        android:contentDescription="@string/description_photo"/>
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- Personal Website Card -->
+            <!-- Website Card -->
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/websiteCard"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginBottom="16dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
                 app:cardCornerRadius="16dp"
-                app:cardElevation="6dp"
-                app:cardBackgroundColor="@color/website_bg"
-                app:rippleColor="#30FFFFFF"
-                android:foreground="?attr/selectableItemBackground">
+                app:cardElevation="8dp"
+                app:strokeWidth="1dp"
+                app:cardBackgroundColor="@color/surface_color">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="16dp">
 
                     <ImageView
-                        android:contentDescription="@string/description_photo"
                         android:layout_width="48dp"
                         android:layout_height="48dp"
                         android:src="@drawable/ic_carbo"
-                        />
+                        android:padding="8dp"
+                        android:contentDescription="@string/description_photo"/>
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
                         android:orientation="vertical"
                         android:layout_marginStart="16dp"
-                        android:gravity="center_vertical">
+                        android:layout_gravity="center_vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/website_title"
-                            android:textColor="@android:color/white"
+                            android:textColor="@color/primary_text"
                             android:textSize="18sp"
                             android:textStyle="bold"/>
 
@@ -223,16 +332,19 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/website_url"
-                            android:textColor="#BBFFFFFF"
-                            android:textSize="14sp"
-                            android:layout_marginTop="2dp"/>
+                            android:textColor="@color/secondary_text"
+                            android:textSize="14sp"/>
                     </LinearLayout>
 
-
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_arrow_forward"
+                        android:layout_gravity="center_vertical"
+                        app:tint="@color/accent_color"
+                        android:contentDescription="@string/description_photo"/>
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
-
         </LinearLayout>
-
-    </LinearLayout>
-</androidx.core.widget.NestedScrollView>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -31,9 +31,9 @@ class HomepageFragment : Fragment() {
             findNavController().navigate(R.id.action_Main_to_Api)
         }
 
-        binding.buttonDocumentation.setOnClickListener {
-            findNavController().navigate(R.id.action_Main_to_Documentation)
-        }
+//        binding.buttonDocumentation.setOnClickListener {
+//            findNavController().navigate(R.id.action_Main_to_Documentation)
+//        }
         binding.buttonCarbo.setOnClickListener {
             findNavController().navigate(R.id.action_Main_to_Carbo)
         }

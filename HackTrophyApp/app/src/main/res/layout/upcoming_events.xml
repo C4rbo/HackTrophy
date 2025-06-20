@@ -1,53 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/background">
+    android:background="@android:color/transparent"
+    android:layout_height="match_parent">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
         android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginBottom="16dp">
+            android:layout_marginBottom="16dp"
+            android:paddingTop="24dp"
+            android:paddingBottom="2dp"
+            android:background="@android:color/transparent">
 
             <TextView
                 android:id="@+id/textViewTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/ctftime_events_title"
-                android:textSize="24sp"
+                android:textSize="26sp"
                 android:textStyle="bold"
-                android:textColor="@color/black"
+                android:textColor="@color/primary_text"
                 android:gravity="center"
-                android:letterSpacing="0.03"/>
+                android:letterSpacing="0.04"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/ctftime_events_sub"
-                android:textSize="16sp"
-                android:textColor="@color/text_secondary"
+                android:textSize="15sp"
+                android:textColor="@color/secondary_text"
                 android:gravity="center"
-                android:layout_marginTop="4dp"/>
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="6dp"/>
         </LinearLayout>
-
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:background="@android:color/transparent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="24dp"
+            android:background="@android:color/transparent">
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerUpcomingEvents"
@@ -55,8 +63,8 @@
                 android:layout_height="wrap_content"
                 android:clipToPadding="false"
                 android:paddingTop="8dp"
-                android:paddingBottom="80dp"/>
-
+                android:paddingBottom="80dp"
+                android:background="@android:color/transparent"/>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 

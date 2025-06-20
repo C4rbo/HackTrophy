@@ -55,12 +55,10 @@ A space to showcase who you are as a CTF player:
 * [ ] Push notifications for upcoming events
 * [ ] Global navigation menu
 * [ ] Code formatting and category refinement in "Doc" section
-* [ ] Redesign the GUI
-* [ ] Design the bg
-* [ ] Theme light/dark
 * [ ] Add screenshoot
 * [ ] Integration of CTFtime team/player profiles directly in the app
-
+* [ ] Fix bug in "Upcoming Events"
+* [ ] Add section in "ctf.xml"
 ---
 
 ## Screenshot
