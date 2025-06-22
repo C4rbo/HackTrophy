@@ -23,154 +23,163 @@
             android:paddingHorizontal="20dp"
             android:paddingBottom="100dp">
 
-<!--            <androidx.cardview.widget.CardView-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginBottom="24dp"-->
-<!--                app:cardCornerRadius="20dp"-->
-<!--                app:cardElevation="12dp"-->
-<!--                app:cardBackgroundColor="@color/surface_color">-->
+            <!-- Header Section with Dynamic Content -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="12dp"
+                app:cardBackgroundColor="@color/surface_color">
 
-<!--                <LinearLayout-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:baselineAligned="false"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:orientation="vertical"-->
-<!--                    android:padding="24dp">-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:baselineAligned="false"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp">
 
-<!--                    &lt;!&ndash; Title and Status &ndash;&gt;-->
-<!--                    <LinearLayout-->
-<!--                        android:baselineAligned="false"-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:orientation="horizontal"-->
-<!--                        android:gravity="center_vertical"-->
-<!--                        android:layout_marginBottom="16dp">-->
+                    <!-- Dynamic Title and Description -->
+                    <LinearLayout
+                        android:baselineAligned="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="20dp">
 
-<!--                        <LinearLayout-->
-<!--                            android:layout_width="0dp"-->
-<!--                            android:layout_height="wrap_content"-->
-<!--                            android:layout_weight="1"-->
-<!--                            android:orientation="vertical"-->
-<!--                            tools:ignore="UselessParent">-->
+                        <!-- Main Title -->
+                        <TextView
+                            android:id="@+id/tv_main_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/app_dashboard_title"
+                            android:textColor="@color/primary_text"
+                            android:textSize="28sp"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="8dp" />
 
-<!--                            <TextView-->
-<!--                                android:layout_width="wrap_content"-->
-<!--                                android:layout_height="wrap_content"-->
-<!--                                android:text="@string/homepage_title"-->
-<!--                                android:textColor="@color/primary_text"-->
-<!--                                android:textSize="28sp"-->
-<!--                                android:textStyle="bold" />-->
+                        <!-- Subtitle/Description -->
+                        <TextView
+                            android:id="@+id/tv_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/app_dashboard_description"
+                            android:textColor="@color/primary_text"
+                            android:textSize="16sp"
+                            android:alpha="0.8"
+                            android:lineSpacingExtra="2dp"/>
 
-<!--                            <TextView-->
-<!--                                android:layout_width="wrap_content"-->
-<!--                                android:layout_height="wrap_content"-->
-<!--                                android:layout_marginTop="4dp"-->
-<!--                                android:text="@string/homepage_sub"-->
-<!--                                android:textColor="@color/primary_text"-->
-<!--                                android:textSize="16sp"-->
-<!--                                android:alpha="0.8"/>-->
+                    </LinearLayout>
 
-<!--                        </LinearLayout>-->
+                    <!-- Enhanced Stats Section -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="20dp">
 
-<!--                    </LinearLayout>-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
 
-<!--                    &lt;!&ndash; Quick Stats &ndash;&gt;-->
-<!--                    <LinearLayout-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:orientation="horizontal"-->
-<!--                        android:padding="16dp">-->
+                            <TextView
+                                android:id="@+id/tv_stat1_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2K+"
+                                android:textColor="@color/accent_color"
+                                android:textSize="24sp"
+                                android:textStyle="bold"/>
 
-<!--                        <LinearLayout-->
-<!--                            android:layout_width="0dp"-->
-<!--                            android:layout_height="wrap_content"-->
-<!--                            android:layout_weight="1"-->
-<!--                            android:orientation="vertical"-->
-<!--                            android:gravity="center">-->
+                            <TextView
+                                android:id="@+id/tv_stat1_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/stat_challenges_solved"
+                                android:textColor="@color/primary_text"
+                                android:textSize="12sp"
+                                android:textAlignment="center"/>
 
-<!--                            <TextView-->
-<!--                                android:layout_width="wrap_content"-->
-<!--                                android:layout_height="wrap_content"-->
-<!--                                android:text="47"-->
-<!--                                android:textColor="@color/accent_color"-->
-<!--                                android:textSize="22sp"-->
-<!--                                android:textStyle="bold"/>-->
+                        </LinearLayout>
 
-<!--                            <TextView-->
-<!--                                android:layout_width="wrap_content"-->
-<!--                                android:layout_height="wrap_content"-->
-<!--                                android:text="CTF Risolti"-->
-<!--                                android:textColor="@color/primary_text"-->
-<!--                                android:textSize="12sp"/>-->
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="50dp"
+                            android:background="@color/divider_color"
+                            android:alpha="0.3"
+                            android:layout_marginHorizontal="16dp"/>
 
-<!--                        </LinearLayout>-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
 
-<!--                        <View-->
-<!--                            android:layout_width="1dp"-->
-<!--                            android:layout_height="40dp"-->
-<!--                            android:background="@color/divider_color"-->
-<!--                            android:alpha="0.3"/>-->
+                            <TextView
+                                android:id="@+id/tv_stat2_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1K+"
+                                android:textColor="@color/accent_color"
+                                android:textSize="24sp"
+                                android:textStyle="bold"/>
 
-<!--                        <LinearLayout-->
-<!--                            android:layout_width="0dp"-->
-<!--                            android:layout_height="wrap_content"-->
-<!--                            android:layout_weight="1"-->
-<!--                            android:orientation="vertical"-->
-<!--                            android:gravity="center">-->
+                            <TextView
+                                android:id="@+id/tv_stat2_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/stat_total_points"
+                                android:textColor="@color/primary_text"
+                                android:textSize="12sp"
+                                android:textAlignment="center"/>
 
-<!--                            <TextView-->
-<!--                                android:layout_width="wrap_content"-->
-<!--                                android:layout_height="wrap_content"-->
-<!--                                android:text="1,247"-->
-<!--                                android:textColor="@color/accent_color"-->
-<!--                                android:textSize="22sp"-->
-<!--                                android:textStyle="bold"/>-->
+                        </LinearLayout>
 
-<!--                            <TextView-->
-<!--                                android:layout_width="wrap_content"-->
-<!--                                android:layout_height="wrap_content"-->
-<!--                                android:text="Punti"-->
-<!--                                android:textColor="@color/primary_text"-->
-<!--                                android:textSize="12sp"/>-->
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="50dp"
+                            android:background="@color/divider_color"
+                            android:alpha="0.3"
+                            android:layout_marginHorizontal="16dp"/>
 
-<!--                        </LinearLayout>-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
 
-<!--                        <View-->
-<!--                            android:layout_width="1dp"-->
-<!--                            android:layout_height="40dp"-->
-<!--                            android:background="@color/divider_color"-->
-<!--                            android:alpha="0.3"/>-->
+                            <TextView
+                                android:id="@+id/tv_stat3_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1M+"
+                                android:textColor="@color/accent_color"
+                                android:textSize="24sp"
+                                android:textStyle="bold"/>
 
-<!--                        <LinearLayout-->
-<!--                            android:layout_width="0dp"-->
-<!--                            android:layout_height="wrap_content"-->
-<!--                            android:layout_weight="1"-->
-<!--                            android:orientation="vertical"-->
-<!--                            android:gravity="center">-->
+                            <TextView
+                                android:id="@+id/tv_stat3_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/stat_global_ranking"
+                                android:textColor="@color/primary_text"
+                                android:textSize="12sp"
+                                android:textAlignment="center"/>
 
-<!--                            <TextView-->
-<!--                                android:layout_width="wrap_content"-->
-<!--                                android:layout_height="wrap_content"-->
-<!--                                android:text="#127"-->
-<!--                                android:textColor="@color/accent_color"-->
-<!--                                android:textSize="22sp"-->
-<!--                                android:textStyle="bold"/>-->
+                        </LinearLayout>
 
-<!--                            <TextView-->
-<!--                                android:layout_width="wrap_content"-->
-<!--                                android:layout_height="wrap_content"-->
-<!--                                android:text="Ranking"-->
-<!--                                android:textColor="@color/primary_text"-->
-<!--                                android:textSize="12sp"/>-->
+                    </LinearLayout>
 
-<!--                        </LinearLayout>-->
+                </LinearLayout>
 
-<!--                    </LinearLayout>-->
+            </androidx.cardview.widget.CardView>
 
-<!--                </LinearLayout>-->
-
-<!--            </androidx.cardview.widget.CardView>-->
+            <!-- Featured Section with Enhanced Design -->
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/button_api"
                 android:layout_width="match_parent"
@@ -188,27 +197,40 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <!-- Featured Badge -->
-                    <TextView
-                        android:layout_width="wrap_content"
+                    <!-- Enhanced Featured Badge -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="FEATURED"
-                        android:textColor="@color/accent_color"
-                        android:textSize="11sp"
-                        android:textStyle="bold"
-                        android:letterSpacing="0.1"
-                        android:paddingHorizontal="12dp"
-                        android:paddingVertical="4dp"
-                        android:layout_margin="16dp"/>
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        android:paddingBottom="0dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/featured_badge"
+                            android:textColor="@color/accent_color"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:letterSpacing="0.1"
+                            android:paddingHorizontal="12dp"
+                            android:paddingVertical="6dp"/>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:padding="20dp"
-                        android:paddingTop="0dp">
+                        android:paddingTop="8dp">
 
-                        <!-- Content -->
+                        <!-- Enhanced Content -->
                         <LinearLayout
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -218,7 +240,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/card1"
+                                android:text="@string/featured_card_title"
                                 android:textColor="@color/primary_text"
                                 android:textSize="20sp"
                                 android:textStyle="bold"
@@ -227,22 +249,40 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/card1_description"
+                                android:text="@string/featured_card_description"
                                 android:textColor="@color/primary_text"
                                 android:textSize="14sp"
-                                android:lineSpacingExtra="2dp"/>
+                                android:lineSpacingExtra="2dp"
+                                android:layout_marginBottom="12dp"/>
+
+                            <!-- Call to Action -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/explore_now"
+                                android:textColor="@color/accent_color"
+                                android:textSize="14sp"
+                                android:textStyle="bold"/>
 
                         </LinearLayout>
 
-                        <!-- Icon -->
-                        <ImageView
-                            android:layout_width="204dp"
-                            android:layout_height="64dp"
-                            android:src="@drawable/ic_ctftime"
-                            android:contentDescription="@string/description_photo"
-                            android:padding="16dp"
+                        <!-- Icon with Background -->
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="180dp"
+                            android:layout_height="80dp"
                             android:layout_marginStart="16dp"
-                            />
+                            app:cardCornerRadius="16dp"
+                            app:cardElevation="4dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_ctftime"
+                                android:contentDescription="@string/featured_icon_description"
+                                android:padding="20dp"
+                                android:scaleType="centerInside"/>
+
+                        </androidx.cardview.widget.CardView>
 
                     </LinearLayout>
 
@@ -250,14 +290,14 @@
 
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- Grid Cards Section -->
+            <!-- Enhanced Grid Cards Section -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:baselineAligned="false">
 
-                <!-- Documentation Card -->
+                <!-- Documentation Card with Enhanced Design -->
                 <com.google.android.material.card.MaterialCardView
                     android:id="@+id/button_documentation"
                     android:layout_width="0dp"
@@ -276,25 +316,24 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <!-- Icon Header -->
+                        <!-- Enhanced Icon Header -->
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="120dp"
                             android:orientation="vertical"
                             android:gravity="center"
-                            android:background="@color/primary_light"
-                            android:padding="24dp">
+                            android:padding="20dp">
 
                             <ImageView
-                                android:layout_width="128dp"
-                                android:layout_height="128dp"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
                                 android:src="@drawable/logo_app"
-                                android:contentDescription="@string/description_photo"
-                                android:padding="12dp" />
+                                android:contentDescription="@string/documentation_icon"
+                                android:scaleType="centerInside" />
 
                         </LinearLayout>
 
-                        <!-- Content -->
+                        <!-- Enhanced Content -->
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -304,7 +343,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="@string/card2"
+                                android:text="@string/documentation_title"
                                 android:textColor="@color/primary_text"
                                 android:textSize="16sp"
                                 android:textStyle="bold"
@@ -313,10 +352,11 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="@string/card2_description"
+                                android:text="@string/documentation_description"
                                 android:textColor="@color/primary_text"
                                 android:textSize="13sp"
-                                android:lineSpacingExtra="2dp"/>
+                                android:lineSpacingExtra="2dp"
+                                android:minLines="2"/>
 
                         </LinearLayout>
 
@@ -324,7 +364,7 @@
 
                 </com.google.android.material.card.MaterialCardView>
 
-                <!-- Carbo Card -->
+                <!-- Carbo Card with Enhanced Design -->
                 <com.google.android.material.card.MaterialCardView
                     android:id="@+id/button_carbo"
                     android:layout_width="0dp"
@@ -343,25 +383,24 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <!-- Icon Header -->
+                        <!-- Enhanced Icon Header -->
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="120dp"
                             android:orientation="vertical"
                             android:gravity="center"
-                            android:background="@color/secondary_light"
-                            android:padding="24dp">
+                            android:padding="20dp">
 
                             <ImageView
-                                android:layout_width="128dp"
-                                android:layout_height="128dp"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
                                 android:src="@drawable/ic_carbo"
-                                android:contentDescription="@string/description_photo"
-                                android:padding="12dp" />
+                                android:contentDescription="@string/carbo_icon"
+                                android:scaleType="centerInside" />
 
                         </LinearLayout>
 
-                        <!-- Content -->
+                        <!-- Enhanced Content -->
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -371,7 +410,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="@string/card3"
+                                android:text="@string/carbo_title"
                                 android:textColor="@color/primary_text"
                                 android:textSize="16sp"
                                 android:textStyle="bold"
@@ -380,10 +419,11 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="@string/card3_description"
+                                android:text="@string/carbo_description"
                                 android:textColor="@color/primary_text"
                                 android:textSize="13sp"
-                                android:lineSpacingExtra="2dp"/>
+                                android:lineSpacingExtra="2dp"
+                                android:minLines="2"/>
 
                         </LinearLayout>
 

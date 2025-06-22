@@ -1,6 +1,8 @@
 package com.example.hacktrophy.adaptercustom
 
 import android.annotation.SuppressLint
+import android.content.Intent
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -19,6 +21,11 @@ class UpcomingEventsAdapter(private val events: List<Event>) :
         fun bind(event: Event) {
             binding.eventTitle.text = event.title
             binding.eventTime.text = "${formatIsoDate(event.start)} → ${formatIsoDate(event.finish)}"
+
+            itemView.setOnClickListener {
+                val intent = Intent(Intent.ACTION_VIEW, Uri.parse(event.url))
+                itemView.context.startActivity(intent)
+            }
         }
 
         private fun formatIsoDate(isoString: String): String {

@@ -7,7 +7,9 @@ import retrofit2.http.Query
 
 interface CtftimeApi {
     @GET("top/")
-    fun getTopTeams(): Call<Map<String, List<Team>>>
+    fun getTopTeams(
+        @Query("limit") limit: Int = 50
+    ): Call<Map<String, List<Team>>>
 
     @GET("events/")
     fun getEvents(

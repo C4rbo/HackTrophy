@@ -5,4 +5,7 @@ data class Event(
     val title: String,
     val start: String,
     val finish: String
-)
+) {
+    val url: String
+        get() = "https://ctftime.org/event/$id"
+}

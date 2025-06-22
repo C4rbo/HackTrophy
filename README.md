@@ -11,7 +11,7 @@ The app is divided into three core sections:
 
 ### CTFtime Tracker
 
-* View the real-time **Top 10 Global Teams** from [CTFtime](https://ctftime.org)
+* View the real-time **Top 50 Global Teams** from [CTFtime](https://ctftime.org)
 * Browse upcoming **CTF events** scheduled within the next **30 days**
 
 > Data is retrieved using the official CTFtime API and handled asynchronously with Kotlin Coroutines.
@@ -56,9 +56,8 @@ A space to showcase who you are as a CTF player:
 * [ ] Global navigation menu
 * [ ] Code formatting and category refinement in "Doc" section
 * [ ] Add screenshoot
-* [ ] Integration of CTFtime team/player profiles directly in the app
-* [ ] Fix bug in "Upcoming Events"
-* [ ] Add section in "ctf.xml"
+* [ ] Add intro section of api
+
 ---
 
 ## Screenshot

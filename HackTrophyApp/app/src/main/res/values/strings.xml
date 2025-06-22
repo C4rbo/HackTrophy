@@ -11,14 +11,37 @@
     <string name="version">v1.0 • Hacktrophy</string>
     <string name="next">Continue</string>
     <!-- Main -->
-    <string name="homepage_title">Welcome back</string>
-    <string name="homepage_sub">Choose the section</string>
-    <string name="card1">CTFTime</string>
-    <string name="card1_description">It\'s an api from CTFTIME</string>
-    <string name="card2">Documentation</string>
-    <string name="card2_description">Info category</string>
-    <string name="card3">Carbo</string>
-    <string name="card3_description">About me</string>
+    <string name="app_dashboard_title">Dashboard</string>
+    <string name="app_dashboard_description">Explore the app to get a complete overview of your activities and progress on the platform.</string>
+
+    <string name="stat_challenges_solved">CTFs organizedd</string>
+    <string name="stat_total_points">Active teams</string>
+    <string name="stat_global_ranking">Global Player</string>
+
+    <string name="featured_badge">FEATURED</string>
+    <string name="featured_card_title">CTFtime Integration</string>
+    <string name="featured_card_description">Automatically sync your results and participate in official competitions</string>
+    <string name="explore_now">Explore now →</string>
+
+    <string name="home_documentation_title">Documentation</string>
+    <string name="documentation_description">Complete guides and resources to get started</string>
+
+    <string name="home_carbo_title">Carbo Tools</string>
+    <string name="home_carbo_description">Advanced tool suite for analysis</string>
+
+    <string name="featured_icon_description">Featured functionality icon</string>
+    <string name="documentation_icon">Documentation icon</string>
+    <string name="carbo_icon">Carbo tools icon</string>
+    <string name="action_indicator">Action indicator</string>
+
+    <string name="welcome_back_title">Welcome Back</string>
+    <string name="activity_overview_title">Activity Overview</string>
+    <string name="personal_dashboard_title">Personal Dashboard</string>
+    <string name="progress_hub_title">Progress Hub</string>
+
+    <string name="welcome_description">Here\'s a summary of your recent activities and achievements</string>
+    <string name="overview_description">Monitor your progress and discover new challenges to complete</string>
+    <string name="hub_description">Your control center for all platform activities</string>
     <!-- Documentation -->
     <string name="documentation_title">Documentation</string>
     <string name="doc_card1">Web Security</string>
@@ -37,7 +60,7 @@
     <!-- ABOUT ME -->
     <string name="carbo_title_section">About me</string>
     <string name="carbo_title">Carbo</string>
-    <string name="carbo_description"> I\'m a computer science student from Italy and a passionate developer</string>
+    <string name="carbo_description"> I\'m a computer science student from Italy</string>
     <string name="follow_me">Follow me</string>
     <string name="github_title">Github</string>
     <string name="github_username">C4rbo</string>
