@@ -3,6 +3,8 @@
 **HackTrophy** is an Android app designed for **cybersecurity** enthusiasts and **CTF (Capture The Flag)** competitors.
 The app provides a mobile platform to track competitive events, deepen knowledge of core CTF technical categories, and manage your profile as an ethical hacker.
 
+![](./bg.png)
+
 ---
 
 ## Main Features
@@ -57,15 +59,3 @@ A space to showcase who you are as a CTF player:
 * [ ] Code formatting and category refinement in "Doc" section
 * [ ] Add screenshoot
 * [ ] Add intro section of api
-
----
-
-## Screenshot
-
-*(to be added)*
-
----
-
-## Author
-
-* **GitHub**: [@C4rbo](https://github.com/C4rbo)
