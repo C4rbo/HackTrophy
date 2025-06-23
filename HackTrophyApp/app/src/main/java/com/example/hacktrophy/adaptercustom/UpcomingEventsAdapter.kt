@@ -1,8 +1,5 @@
 package com.example.hacktrophy.adaptercustom
 
-import android.annotation.SuppressLint
-import android.content.Intent
-import android.net.Uri
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -11,20 +8,19 @@ import com.example.hacktrophy.data.Event
 import java.text.SimpleDateFormat
 import java.util.*
 
-class UpcomingEventsAdapter(private val events: List<Event>) :
-    RecyclerView.Adapter<UpcomingEventsAdapter.EventViewHolder>() {
+class UpcomingEventsAdapter(
+    private val events: List<Event>,
+    private val onEventClick: (Event) -> Unit
+) : RecyclerView.Adapter<UpcomingEventsAdapter.EventViewHolder>() {
 
     inner class EventViewHolder(private val binding: ItemUpcomingEventBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
-        @SuppressLint("SetTextI18n")
         fun bind(event: Event) {
             binding.eventTitle.text = event.title
             binding.eventTime.text = "${formatIsoDate(event.start)} → ${formatIsoDate(event.finish)}"
-
             itemView.setOnClickListener {
-                val intent = Intent(Intent.ACTION_VIEW, Uri.parse(event.url))
-                itemView.context.startActivity(intent)
+                onEventClick(event)
             }
         }
 

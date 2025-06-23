@@ -13,6 +13,7 @@ import com.example.hacktrophy.api_ctf.RetrofitInstance
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import androidx.navigation.fragment.findNavController
 
 class UpcomingEventsFragment : Fragment() {
 
@@ -42,7 +43,10 @@ class UpcomingEventsFragment : Fragment() {
             override fun onResponse(call: Call<List<Event>>, response: Response<List<Event>>) {
                 if (response.isSuccessful) {
                     val events = response.body() ?: emptyList()
-                    binding.recyclerUpcomingEvents.adapter = UpcomingEventsAdapter(events)
+                    binding.recyclerUpcomingEvents.adapter = UpcomingEventsAdapter(events) { event ->
+                        val action = UpcomingEventsFragmentDirections.actionUpcomingEventsToEventDetails(event)
+                        findNavController().navigate(action)
+                    }
                 } else {
                     // Error
                 }

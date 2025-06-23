@@ -63,4 +63,16 @@
         <item name="android:layout_gravity">center_vertical</item>
         <item name="tint">@color/accent_color</item>
     </style>
+    <style name="CustomOutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/accent_color</item>
+        <item name="android:textColor">@color/accent_color</item>
+        <item name="rippleColor">@color/accent_color_light</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="CustomFilledButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/accent_color</item>
+        <item name="android:textColor">@color/primary_dark</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
 </resources>

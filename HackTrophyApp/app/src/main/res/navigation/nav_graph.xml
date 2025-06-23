@@ -57,7 +57,21 @@
         android:id="@+id/UpcomingEventsFragment"
         android:name="com.example.hacktrophy.UpcomingEventsFragment"
         android:label="@string/app_name"
-        tools:layout="@layout/upcoming_events" />
+        tools:layout="@layout/upcoming_events">
+        <action
+            android:id="@+id/action_upcomingEvents_to_eventDetails"
+            app:destination="@id/eventDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/eventDetailsFragment"
+        android:name="com.example.hacktrophy.EventDetailsFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_event_details">
+        <argument
+            android:name="event"
+            app:argType="com.example.hacktrophy.data.Event" />
+    </fragment>
 
     <fragment
         android:id="@+id/Documentation"

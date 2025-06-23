@@ -33,8 +33,11 @@
 
     <color name="black">#181616</color>
     <color name="white">#FFFFFF</color>
+    <color name="accent_color_light">#FFB74D</color>
 
     <color name="bg">#1c1e20</color>
+    <color name="surface_variant">#2D2D2D</color>
+    <color name="primary_dark">#121212</color>
 
 
 </resources>

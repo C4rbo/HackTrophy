@@ -39,6 +39,12 @@ A space to showcase who you are as a CTF player:
 
 ---
 
+## Screenshoot
+
+![](./layout.png)
+
+---
+
 ## Tech Stack
 
 | Technology         | Description                            |
@@ -57,5 +63,3 @@ A space to showcase who you are as a CTF player:
 * [ ] Push notifications for upcoming events
 * [ ] Global navigation menu
 * [ ] Code formatting and category refinement in "Doc" section
-* [ ] Add screenshoot
-* [ ] Add intro section of api
